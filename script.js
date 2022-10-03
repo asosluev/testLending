@@ -1,11 +1,11 @@
 $(document).ready(function() {
 
     //E-mail Ajax Send
-    $("input").submit(function() { //Change
+    $("form").submit(function() { //Change
         var th = $(this);
         $.ajax({
             type: "POST",
-            url: "modx-mail.php", //Change
+            url: "mail.php", //Change
             data: th.serialize()
         }).done(function() {
             alert("Thank you!");
